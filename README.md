@@ -1,9 +1,10 @@
 
 # Rapport
 
-**Skriv din rapport här!**
 
-_Du kan ta bort all text som finns sedan tidigare_.
+Laddade ner andriod studio, forkade mobileapp-programming-hello sedan bytte namn och text genom att hitta rätt xml fil.
+bytte namn till "My name is simon!" och texten till "this app is amazing".
+
 
 ## Följande grundsyn gäller dugga-svar:
 
@@ -16,24 +17,29 @@ _Du kan ta bort all text som finns sedan tidigare_.
 Programkod ska se ut som exemplet nedan. Koden måste vara korrekt indenterad då den blir lättare att läsa vilket gör det lättare att hitta syntaktiska fel.
 
 ```
-function errorCallback(error) {
-    switch(error.code) {
-        case error.PERMISSION_DENIED:
-            // Geolocation API stöds inte, gör något
-            break;
-        case error.POSITION_UNAVAILABLE:
-            // Misslyckat positionsanrop, gör något
-            break;
-        case error.UNKNOWN_ERROR:
-            // Okänt fel, gör något
-            break;
-    }
-}
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     >> android:text="this app is amazing" <<
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+-------------------------------------------------------------------
+
+<resources>
+    <string name="app_name">Hi my name is Simon!</string>
+</resources>
+
 ```
 
 Bilder läggs i samma mapp som markdown-filen.
 
 ![](android.png)
+![](Screenshot_20240325_104735.png)
 
 Läs gärna:
 
